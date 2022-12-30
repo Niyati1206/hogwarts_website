@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@font-face {font-family: "Harry Potter";
+  src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot");
+  src: url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/0421d4186d6efbfc5331fe180895e780.svg#Harry Potter") format("svg");
+}
+body{
+ 
+  background-color:  #181818;
+}
+:root {
+  --green: #0CBA77;
+}
+
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: Harry Potter, Arial;
+}
+
+*::selection {
+  background: var(--green);
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+/* .scroll-top {
+  position: fixed;
+  bottom: 4.5rem;
+  right: 1rem;
+  z-index: 1000;
+  font-size: 2.5rem;
+  background: rgba(0, 255, 0, 0.1);
+  color: var(--green);
+  border-radius: 0.3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1.5rem;
+  display: none;
+} */
+
+/* .scroll-top:hover {
+  background: var(--green);
+  color: #fff;
+} */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  background: #181818;
+  box-shadow: 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 32px;
+}
+
+.list a {
+  list-style: none;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding-right: 9px 0;
+  margin-right: 9px;
+  color: rgb(12, 186, 119);
+  transition: 0.2s ease-out;
+  align-items: flex-start;
+}
+
+.icons a {
+  list-style: none;
+  font-weight: 400;
+  text-decoration: none;
+  padding-right: 9px 0;
+  margin-left: 9px;
+  transition: 0.2s ease-out;
+}
+
+.fa {
+  font-size: 50px;
+  width: 15px;
+  height: 15px;
+  text-decoration: none;
+  
+  
+}
+
+/* .fa-facebook {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: linear-gradient(red, pink);
+  color: white;
+}
+
+.fa-twitter {
+  background: #007bb5;
+  color: white;
+} */
+
+.top2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+ 
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  left: 5px;
+}
+
+.logo img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 10%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+.logo h3 {
+  position: absolute;
+  left: -4px;
+  top: 27px;
+  color: rgba(103, 161, 15, 0.877);
+}
+
+.search input {
+  position: absolute;
+  left: 89px;
+  width: 55%;
+  top: 50px;
+  height: 43px;
+  background: #e5ffd4;
+  border-radius: 20px;
+  border: none;
+}
+
+.sear {
+  font-size: xx-large;
+  border-radius: 0 20px 20px 0;
+  position: relative;
+  width: 70%;
+  height: 43px;
+  right: 479px;
+  background-color: #2e3e41;
+ 
+}
+
+.fa-search {
+  color: #ffffff;
+  padding-left: 5px;
+  padding-top: 9px;
+}
+
+.search #sf a {
+  position: absolute;
+    right: 200px;
+    top: 72px; 
+   
+  position: relative;
+  display: inline;
+  vertical-align: middle;
+  left: 200px;
+ 
+}
+
+.user {
+  
+  color: gold;
+  width: 50px;
+  font-size: large;
+  right: 51px;
+  
+ 
+}
+
+input[type="text"] {
+  color: rgb(26, 105, 6);
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 200;
+  font-family: "Oswald", Helvetica Neue;
+}
+
+::placeholder {
+  color: rgb(26, 105, 6);
+  opacity: 1;
+  font-weight: 200;
+  font-size: large;
+  text-align: left;
+  padding-right: 15px;
+}
+
+.lists {
+  height: 49px;
+  box-shadow: 0 1.8px rgba(131, 129, 129, 0.3);
+  font-family: "Oswald", Helvetica Neue;
+}
+
+.lists ul {
+  display: inline-flex;
+  list-style: none;
+  color: rgb(12, 186, 119);
+  font-family: "Oswald", Helvetica Neue;
+}
+
+.mew {
+  display: inline;
+  font-weight: 200;
+  font-size: large;
+  /* font-family: "Oswald", Helvetica Neue; */
+  font-family: Harry Potter, Arial;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  padding-right: 55px;
+}
+
+/* .active, .lists ul li:hover{
+    
+    border-radius: 3px;
+}*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: Harry Potter, Arial;
+  /* font-family: "Oswald", Helvetica Neue; */
+  font-size: 14px;
+}
+.h-dropdown {
+  position: relative;
+  display: inline-block;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  /* font-family: Harry Potter, Arial; */
+  font-family: "Oswald", Helvetica Neue;
+  font-size: 14px;
+  background-color: wheat;
+}
+
+.dropdown li:hover > .h-dropdown {
+  display: block;
+  font-family: "Oswald", Helvetica Neue;
+}
+
+.dropdown > a {
+  font-weight: 200;
+  font-size: large;
+  display: inline-block;
+  color: green;
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  font-family: "Oswald", Helvetica Neue;
+}
+
+
+.dropdown ul {
+  position: absolute;
+  top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  left: 0px;
+  list-style: none;
+  padding: 4px 0px;
+  display: none;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.175);
+  z-index: 5;
+  font-family: "Oswald", Helvetica Neue;
+}
+
+.dropdown ul li {
+  display: block;
+  padding: 6px 20px;
+  white-space: nowrap;
+  min-width: 100px;
+  font-family: "Oswald", Helvetica Neue;
+}
+
+.dropdown ul li:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  font-family: "Oswald", Helvetica Neue;
+
+}
+
+.dropdown ul li a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  font-family: "Oswald", Helvetica Neue;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  background-color: #bbb;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  vertical-align: text-bottom;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/ets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.category .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 65px;
+  gap: 2.5rem;
+  width: 90%;
+}
+
+.category .box-container .box {
+  position: relative;
+
+  /* flex:1 1 23rem; */
+
+  height: 30rem;
+  overflow: hidden;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.category .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.category .box-container .box .content {
+  position: absolute;
+  bottom: -10rem;
+  background: transparent;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  /* padding: 0; */
+  width: 100%;
+}
+
+
+.category .box-container .box:hover .content {
+  bottom: 0;
+}
+
+.category .box-container .box .content h3 {
+  color: #333;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.category .box-container .box .content .btn {
+  margin-bottom: 1.3rem;
+}
+
+.heading {
+  position: relative;
+  font-size: 3rem;
+  color: white;
+  padding-left: 1rem;
+  border-left: 0.4rem solid var(--green);
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: rem 3rem;
+ 
+  color: rgb(12, 186, 119);;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.box a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+/* add to cart */
+
+.section-header {
+  /* font-family: "Metal Mania"; */
+   font-family: Harry Potter, Arial;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+}
